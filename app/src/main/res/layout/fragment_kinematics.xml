@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KinematicsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    //calculate button
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="350dp"
+        android:textColor="@color/colorGreen"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="300dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accelerationEditText"
+        app:layout_constraintVertical_bias="0.302" />
+    <!--
+    <Button
+        android:id="@+id/explainBtn"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="300dp"
+        android:text="Explain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accelerationEditText"
+        app:layout_constraintVertical_bias="0.302" />
+           -->
+    <TextView
+        android:id="@+id/fvText"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Final Velocity"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/initialView"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:text="Initial Velocity"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/accView"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:text="Acceleration"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="180dp"
+        android:text="Time"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/deltaView"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="230dp"
+        android:text="Delta Distance"
+        android:textAlignment="textStart" />
+
+    <EditText
+        android:id="@+id/finalVEditText"
+        android:layout_width="171dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Vf"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/initialVEditText2"
+        android:layout_width="171dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="Vi"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/accelerationEditText"
+        android:layout_width="171dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="acc"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="171dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="170dp"
+        android:ems="10"
+        android:hint="T"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/deltaDistanceEditText"
+        android:layout_width="171dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Delta D"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+</FrameLayout>
