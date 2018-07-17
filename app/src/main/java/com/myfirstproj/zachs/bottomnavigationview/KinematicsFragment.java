@@ -33,12 +33,12 @@ public class KinematicsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //creates text box variables
-                TextView resultTextView = (TextView) view.findViewById(R.id.resultTextView);
-                EditText finalVEditText = (EditText) view.findViewById(R.id.finalVEditText);
+                TextView resultTextView = view.findViewById(R.id.resultTextView);
+                EditText finalVEditText = view.findViewById(R.id.finalVEditText);
                 EditText initialVEditText = view.findViewById(R.id.initialVEditText2);
-                EditText accelerationNumEditText = (EditText) view.findViewById(R.id.accelerationEditText);
-                EditText timeNumEditText = (EditText) view.findViewById(R.id.timeEditText);
-                EditText deltaDistanceNumEditText = (EditText) view.findViewById(R.id.deltaDistanceEditText);
+                EditText accelerationNumEditText = view.findViewById(R.id.accelerationEditText);
+                EditText timeNumEditText = view.findViewById(R.id.timeEditText);
+                EditText deltaDistanceNumEditText = view.findViewById(R.id.deltaDistanceEditText);
                 //gets the value from the text box
                 String finalVNumCheck = finalVEditText.getText().toString();
                 String initialVCheck = initialVEditText.getText().toString();
@@ -46,7 +46,7 @@ public class KinematicsFragment extends Fragment {
                 String timeNumCheck = timeNumEditText.getText().toString();
                 String deltaNumCheck = deltaDistanceNumEditText.getText().toString();
                 //Variables in Integer form
-                double finalVNum = 0;
+                double finalVNum;
                 double initialVNum = 0;
                 double accNum;
                 double timeNum;
@@ -124,7 +124,6 @@ public class KinematicsFragment extends Fragment {
                 }
                 //d=??
                 if (deltaNumCheck.isEmpty() && !timeNumCheck.isEmpty() && !initialVCheck.isEmpty() && !accNumCheck.isEmpty() && !finalVNumCheck.isEmpty()) {
-                    finalVNum = Double.parseDouble(finalVNumCheck);
                     initialVNum = Double.parseDouble(initialVCheck);
                     accNum = Double.parseDouble(accNumCheck);
                     timeNum = Double.parseDouble(timeNumCheck);
@@ -166,7 +165,7 @@ public class KinematicsFragment extends Fragment {
                     //t=(vf-vi)/a
                     accNum = ((finalVNum * finalVNum) - (initialVNum * initialVNum)) / (2 * deltaNum);
                     timeNum = (finalVNum - initialVNum) / accNum;
-                    resultTextView.setText(Html.fromHtml(accColor + numberFormat.format(accNum)));
+                    resultTextView.setText(Html.fromHtml(accColor + numberFormat.format(accNum) + "<br>" + timeColor +numberFormat.format(Math.abs(timeNum))));
                     return;
                 }
 
@@ -174,7 +173,6 @@ public class KinematicsFragment extends Fragment {
                 if (accNumCheck.isEmpty() && !timeNumCheck.isEmpty() && !initialVCheck.isEmpty() && !deltaNumCheck.isEmpty() && !finalVNumCheck.isEmpty()) {
                     finalVNum = Double.parseDouble(finalVNumCheck);
                     initialVNum = Double.parseDouble(initialVCheck);
-                    timeNum = Double.parseDouble(timeNumCheck);
                     deltaNum = Double.parseDouble(deltaNumCheck);
                     //a=(vf^2 - vi^2)/(2*deltaX)
                     accNum = ((finalVNum * finalVNum) - (initialVNum * initialVNum)) / (2 * deltaNum);
@@ -186,7 +184,6 @@ public class KinematicsFragment extends Fragment {
                     finalVNum = Double.parseDouble(finalVNumCheck);
                     initialVNum = Double.parseDouble(initialVCheck);
                     accNum = Double.parseDouble(accNumCheck);
-                    deltaNum = Double.parseDouble(deltaNumCheck);
                     timeNum = (finalVNum - initialVNum) / accNum;
                     resultTextView.setText(Html.fromHtml(timeColor + numberFormat.format(Math.abs(timeNum))));
                     return;
@@ -209,16 +206,14 @@ public class KinematicsFragment extends Fragment {
                     initialVNum = Double.parseDouble(initialVCheck);
                     accNum = Double.parseDouble(accNumCheck);
                     timeNum = Double.parseDouble(timeNumCheck);
-                    deltaNum = Double.parseDouble(deltaNumCheck);
                     finalVNum = (initialVNum + (accNum * Math.abs(timeNum)));
                     //sets color and formats output
                     resultTextView.setText(Html.fromHtml(vfColor + numberFormat.format(finalVNum)));
                     return;
                 }
                 //if all other options fail(default output)
-                if (b == true) {
+                if (b) {
                     resultTextView.setText("This problem is not solvable.");
-                    return;
                 }
             }
         });

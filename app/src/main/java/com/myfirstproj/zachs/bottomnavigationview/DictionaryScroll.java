@@ -11,8 +11,8 @@ public class DictionaryScroll extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //create the scrolling activity and textboxes
         setContentView(R.layout.activity_dictionary_scroll);
-        TextView mTitleWindow = (TextView) findViewById(R.id.titleWindow);
-        TextView mMessageWindow = (TextView) findViewById(R.id.messageWindow);
+        TextView mTitleWindow = findViewById(R.id.titleWindow);
+        TextView mMessageWindow = findViewById(R.id.messageWindow);
         //information that goes into the scrolling dictionary
         mMessageWindow.setText("ACCELERATION" + "\n the rate of change in velocity with respect to time."
                 + "\nDISPLACEMENT" + "\n distance from the objects original position." + "\nDISTANCE"

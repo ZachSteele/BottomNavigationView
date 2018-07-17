@@ -33,10 +33,10 @@ public class CalculatorFragment extends Fragment {
         calculatef2m.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView resultTextViewf2m = (TextView) view.findViewById(R.id.resultF2M);
-                EditText edittextfeet = (EditText) view.findViewById(R.id.editTextFeet);
+                TextView resultTextViewf2m = view.findViewById(R.id.resultF2M);
+                EditText edittextfeet = view.findViewById(R.id.editTextFeet);
                 String feetNumCheck = edittextfeet.getText().toString();
-                double feetNum = 0;
+                double feetNum;
                 //default output
                 if (feetNumCheck.equals("")) {
                     resultTextViewf2m.setText("Please input a number");
@@ -54,10 +54,10 @@ public class CalculatorFragment extends Fragment {
         calculatem2f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView resultTextViewm2f = (TextView) view.findViewById(R.id.resultM2F);
-                EditText edittextmeters = (EditText) view.findViewById(R.id.editTextMeters);
+                TextView resultTextViewm2f = view.findViewById(R.id.resultM2F);
+                EditText edittextmeters = view.findViewById(R.id.editTextMeters);
                 String meterNumCheck = edittextmeters.getText().toString();
-                double metersNum = 0;
+                double metersNum;
                 //default output
                 if (meterNumCheck.equals("")) {
                     resultTextViewm2f.setText("Please input a number");
@@ -75,10 +75,10 @@ public class CalculatorFragment extends Fragment {
         calculateh2s.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView resultTextViewh2s = (TextView) view.findViewById(R.id.resultH2S);
-                EditText edittexth2s = (EditText) view.findViewById(R.id.editTseconds);
+                TextView resultTextViewh2s = view.findViewById(R.id.resultH2S);
+                EditText edittexth2s = view.findViewById(R.id.editTseconds);
                 String hoursNumCheck = edittexth2s.getText().toString();
-                double numh2s = 0;
+                double numh2s;
                 //default output
                 if (hoursNumCheck.equals("")) {
                     resultTextViewh2s.setText("Please input a number");
@@ -96,10 +96,10 @@ public class CalculatorFragment extends Fragment {
         calculatetotal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView resultTextViewtotal = (TextView) view.findViewById(R.id.resultTotal);
-                EditText edittextTotal = (EditText) view.findViewById(R.id.editTxtTotal);
+                TextView resultTextViewtotal = view.findViewById(R.id.resultTotal);
+                EditText edittextTotal = view.findViewById(R.id.editTxtTotal);
                 String numCheckTotal = edittextTotal.getText().toString();
-                double numTotal = 0;
+                double numTotal;
                 //default output
                 if (numCheckTotal.equals("")) {
                     resultTextViewtotal.setText("Please input a number");
