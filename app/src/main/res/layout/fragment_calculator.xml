@@ -31,8 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="90dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="40dp"
         android:text="Calculate"
@@ -44,7 +42,7 @@
         app:layout_constraintVertical_bias="0.302" />
 
     <EditText
-        android:id="@+id/editTextFeet"
+        android:id="@+id/editTextF2M"
         android:layout_width="171dp"
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
@@ -73,8 +71,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="90dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="145dp"
         android:text="Calculate"
@@ -86,7 +82,7 @@
         app:layout_constraintVertical_bias="0.302" />
 
     <EditText
-        android:id="@+id/editTextMeters"
+        android:id="@+id/editTextM2F"
         android:layout_width="171dp"
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
@@ -115,8 +111,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="90dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="260dp"
         android:text="Calculate"
@@ -128,7 +122,7 @@
         app:layout_constraintVertical_bias="0.302" />
 
     <EditText
-        android:id="@+id/editTseconds"
+        android:id="@+id/editTextH2S"
         android:layout_width="171dp"
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
@@ -138,17 +132,17 @@
         android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
-        android:id="@+id/editTxtTotal"
+        android:id="@+id/editTextFPS2MPS"
         android:layout_width="171dp"
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="380dp"
         android:ems="10"
-        android:hint="fps to mps"
+        android:hint="MPH to m/s"
         android:inputType="number|numberSigned|numberDecimal" />
 
     <TextView
-        android:id="@+id/resultTotal"
+        android:id="@+id/resultFPS2MPS"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="440dp"
@@ -162,13 +156,11 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/calcBtnTotal"
+        android:id="@+id/calcBtnFPS2MPS"
         android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="90dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="380dp"
         android:text="Calculate"

@@ -34,7 +34,7 @@ public class CalculatorFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 TextView resultTextViewf2m = view.findViewById(R.id.resultF2M);
-                EditText edittextfeet = view.findViewById(R.id.editTextFeet);
+                EditText edittextfeet = view.findViewById(R.id.editTextF2M);
                 String feetNumCheck = edittextfeet.getText().toString();
                 double feetNum;
                 //default output
@@ -55,7 +55,7 @@ public class CalculatorFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 TextView resultTextViewm2f = view.findViewById(R.id.resultM2F);
-                EditText edittextmeters = view.findViewById(R.id.editTextMeters);
+                EditText edittextmeters = view.findViewById(R.id.editTextM2F);
                 String meterNumCheck = edittextmeters.getText().toString();
                 double metersNum;
                 //default output
@@ -76,7 +76,7 @@ public class CalculatorFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 TextView resultTextViewh2s = view.findViewById(R.id.resultH2S);
-                EditText edittexth2s = view.findViewById(R.id.editTseconds);
+                EditText edittexth2s = view.findViewById(R.id.editTextH2S);
                 String hoursNumCheck = edittexth2s.getText().toString();
                 double numh2s;
                 //default output
@@ -92,12 +92,12 @@ public class CalculatorFragment extends Fragment {
             }
         });
         //when this button is clicked calculate mph to mps
-        Button calculatetotal = view.findViewById(R.id.calcBtnTotal);
+        Button calculatetotal = view.findViewById(R.id.calcBtnFPS2MPS);
         calculatetotal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView resultTextViewtotal = view.findViewById(R.id.resultTotal);
-                EditText edittextTotal = view.findViewById(R.id.editTxtTotal);
+                TextView resultTextViewtotal = view.findViewById(R.id.resultFPS2MPS);
+                EditText edittextTotal = view.findViewById(R.id.editTextFPS2MPS);
                 String numCheckTotal = edittextTotal.getText().toString();
                 double numTotal;
                 //default output

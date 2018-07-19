@@ -35,7 +35,7 @@ public class KinematicsFragment extends Fragment {
                 //creates text box variables
                 TextView resultTextView = view.findViewById(R.id.resultTextView);
                 EditText finalVEditText = view.findViewById(R.id.finalVEditText);
-                EditText initialVEditText = view.findViewById(R.id.initialVEditText2);
+                EditText initialVEditText = view.findViewById(R.id.initialVEditText);
                 EditText accelerationNumEditText = view.findViewById(R.id.accelerationEditText);
                 EditText timeNumEditText = view.findViewById(R.id.timeEditText);
                 EditText deltaDistanceNumEditText = view.findViewById(R.id.deltaDistanceEditText);
