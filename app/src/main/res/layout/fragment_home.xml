@@ -40,7 +40,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="400dp"
-        android:text="THIS APP IS A SCHOOL PROJECT THAT IS NOT FINISHED. LOOK OUT FOR FUTURE UPDATES" />
+        android:text="This is test update number 3. THIS APP IS A SCHOOL PROJECT THAT IS NOT FINISHED. LOOK OUT FOR FUTURE UPDATES" />
 
     <ImageView
         android:id="@+id/calculatorView"
