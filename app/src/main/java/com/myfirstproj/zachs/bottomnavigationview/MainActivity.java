@@ -24,23 +24,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mMainFrame = (FrameLayout) findViewById(R.id.main_frame);
         mMainNav = (BottomNavigationView) findViewById(R.id.main_nav);
-
         homeFragment = new HomeFragment();
         calculatorFragment = new CalculatorFragment();
         kinematicsFragment = new KinematicsFragment();
-
         setFragment(homeFragment);
+        //Bottom Navigation
         mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
                 switch (item.getItemId()) {
-
                     case R.id.nav_home:
                         mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
                         setFragment(homeFragment);
                         return true;
-
                     case R.id.nav_calculator:
                         mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
                         setFragment(calculatorFragment);
@@ -54,23 +50,17 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent1 = new Intent(MainActivity.this, DictionaryScroll.class);
                         startActivity(intent1);
                         return true;
-
                     default:
                         return false;
-
                 }
             }
 
 
         });
     }
-
     private void setFragment(android.support.v4.app.Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.main_frame, fragment);
         fragmentTransaction.commit();
-
     }
-
-
 }

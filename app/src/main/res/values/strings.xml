@@ -8,6 +8,23 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_dictionary_scrolling">dictionaryScrollingActivity</string>
+    <string name="large_actual_text">
+         "ACCELERATION\n"
+        "the rate of change in velocity with respect to time.\n"
+        "DISPLACEMENT\n"
+        " distance from the objects original position.\n"
+        "DISTANCE\n"
+        "Change in position from the last location.\n"
+        "\n\n\n\n\n\n\nIcons made by https://www.flaticon.com/authors/smashicons. from https://www.flaticon.com/"
+        "\nwww.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/\n\n"
+        "Icons made by www.flaticon.com/authors/freepik"
+        "www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/\n"
+        "Icons made by https://www.flaticon.com/authors/freepik\n\n"
+        "www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/\n\n"
+        "Icons made by https://www.flaticon.com/authors/eucalyp\n"
+        "www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/\n\n"
+        "Launcher icon made by Just UI at https://www.iconfinder.com licensed by http://creativecommons.org/licenses/by/3.0/"
+    </string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
