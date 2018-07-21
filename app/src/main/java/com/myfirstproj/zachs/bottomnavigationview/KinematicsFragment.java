@@ -172,7 +172,7 @@ public class KinematicsFragment extends Fragment {
                     //t=(vf-vi)/a
                     accNum = ((finalVNum * finalVNum) - (initialVNum * initialVNum)) / (2 * deltaNum);
                     timeNum = (finalVNum - initialVNum) / accNum;
-                    resultTextView.setText(Html.fromHtml(accColor + numberFormat.format(accNum) + "<br>" + timeColor +numberFormat.format(Math.abs(timeNum))));
+                    resultTextView.setText(Html.fromHtml(accColor + numberFormat.format(accNum) + "<br>" + timeColor + numberFormat.format(Math.abs(timeNum))));
                     return;
                 }
 
@@ -203,7 +203,6 @@ public class KinematicsFragment extends Fragment {
                     //given values are put into decimal form
                     finalVNum = Double.parseDouble(finalVNumCheck);
                     accNum = Double.parseDouble(accNumCheck);
-                    timeNum = Double.parseDouble(timeNumCheck);
                     deltaNum = Double.parseDouble(deltaNumCheck);
                     initialVNum = Math.sqrt((2.0 * Math.abs(accNum) * deltaNum)) - finalVNum;
                     //sets color and formats output
@@ -223,9 +222,7 @@ public class KinematicsFragment extends Fragment {
                     return;
                 }
                 //if all other options fail(default output)
-                if (b) {
-                    resultTextView.setText("This problem is not solvable.");
-                }
+                resultTextView.setText("This problem is not solvable.");
             }
         });
         //explain option will be added to the calculator in the future

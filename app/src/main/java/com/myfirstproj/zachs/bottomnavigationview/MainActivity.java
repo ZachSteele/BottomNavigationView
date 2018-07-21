@@ -12,7 +12,6 @@ import android.widget.FrameLayout;
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView mMainNav;
-    private FrameLayout mMainFrame;
 
     private HomeFragment homeFragment;
     private CalculatorFragment calculatorFragment;
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mMainFrame = (FrameLayout) findViewById(R.id.main_frame);
+        FrameLayout mMainFrame = (FrameLayout) findViewById(R.id.main_frame);
         mMainNav = (BottomNavigationView) findViewById(R.id.main_nav);
         homeFragment = new HomeFragment();
         calculatorFragment = new CalculatorFragment();
@@ -58,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
     }
+
     private void setFragment(android.support.v4.app.Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.main_frame, fragment);

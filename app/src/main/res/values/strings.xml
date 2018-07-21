@@ -4,10 +4,6 @@
     <string name="nav_calculator">calculator</string>
     <string name="nav_toolbox">Kinematics</string>
     <string name="nav_dictionary">Dictionary</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_dictionary_scrolling">dictionaryScrollingActivity</string>
     <string name="large_actual_text">
          "ACCELERATION\n"
         "the rate of change in velocity with respect to time.\n"
