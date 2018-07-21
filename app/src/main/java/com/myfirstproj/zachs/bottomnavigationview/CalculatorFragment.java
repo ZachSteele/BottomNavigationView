@@ -29,24 +29,30 @@ public class CalculatorFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_calculator, container, false);
         //when this button is clicked calculate feet to meters
         Button calculatef2m = view.findViewById(R.id.calcBtnF2M);
+        final String colorMeters = "<font color='#000000'> Meters</font>";
+        final String colorinput = "<font color='#000000'>Please input a number</font>";
+        final String colorFeet = "<font color='#000000'> Feet</font>";
+        final String colorSeconds = "<font color='#000000'> Seconds</font>";
+        final String colormps = "<font color='#000000'> m/s</font>";
         final DecimalFormat numberFormat = new DecimalFormat("#.00");
         calculatef2m.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 TextView resultTextViewf2m = view.findViewById(R.id.resultF2M);
                 EditText edittextfeet = view.findViewById(R.id.editTextF2M);
                 String feetNumCheck = edittextfeet.getText().toString();
                 double feetNum;
                 //default output
                 if (feetNumCheck.equals("")) {
-                    resultTextViewf2m.setText("Please input a number");
+                    resultTextViewf2m.setText(Html.fromHtml(colorinput));
                     return;
                 }
                 //the feet to meters calculation
                 feetNum = Double.parseDouble(feetNumCheck);
                 feetNum = feetNum / 3.28084;
                 //formats the number to 2 two decimal places, allows for color change
-                resultTextViewf2m.setText(Html.fromHtml(numberFormat.format(feetNum) + " meters"));
+                resultTextViewf2m.setText(Html.fromHtml(numberFormat.format(feetNum) + colorMeters));
             }
         });
         //when this button is clicked calculate meters to feet
@@ -60,14 +66,15 @@ public class CalculatorFragment extends Fragment {
                 double metersNum;
                 //default output
                 if (meterNumCheck.equals("")) {
-                    resultTextViewm2f.setText("Please input a number");
+                    resultTextViewm2f.setText(Html.fromHtml(colorinput));
                     return;
                 }
                 //the meters to feet calculation
                 metersNum = Double.parseDouble(meterNumCheck);
                 metersNum = metersNum * 3.28084;
                 //formats the number to 2 two decimal places, allows for color change
-                resultTextViewm2f.setText(Html.fromHtml(numberFormat.format(metersNum) + " feet"));
+                resultTextViewm2f.setText(Html.fromHtml(numberFormat.format(metersNum) + colorFeet));
+
             }
         });
         //when this button is clicked calculate meters to feet
@@ -81,14 +88,14 @@ public class CalculatorFragment extends Fragment {
                 double numh2s;
                 //default output
                 if (hoursNumCheck.equals("")) {
-                    resultTextViewh2s.setText("Please input a number");
+                    resultTextViewh2s.setText(Html.fromHtml(colorinput));
                     return;
                 }
                 //the hours to seconds calculation
                 numh2s = Double.parseDouble(hoursNumCheck);
                 numh2s = numh2s * 3600;
                 //Output stays as whole number
-                resultTextViewh2s.setText((int) numh2s + " seconds");
+                resultTextViewh2s.setText(Html.fromHtml((int) numh2s + colorSeconds));
             }
         });
         //when this button is clicked calculate mph to mps
@@ -102,14 +109,14 @@ public class CalculatorFragment extends Fragment {
                 double numTotal;
                 //default output
                 if (numCheckTotal.equals("")) {
-                    resultTextViewtotal.setText("Please input a number");
+                    resultTextViewtotal.setText(Html.fromHtml(colorinput));
                     return;
                 }
                 numTotal = Double.parseDouble(numCheckTotal);
                 //mile per hour to meter per second
                 numTotal = numTotal / 2.23694;
                 //formats the number to 2 two decimal places, allows for color change
-                resultTextViewtotal.setText(Html.fromHtml(numberFormat.format(numTotal) + " m/s"));
+                resultTextViewtotal.setText(Html.fromHtml(numberFormat.format(numTotal) + colormps));
             }
         });
         return view;

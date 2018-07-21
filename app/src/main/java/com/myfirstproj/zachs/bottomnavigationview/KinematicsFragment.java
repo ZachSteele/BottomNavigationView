@@ -51,7 +51,6 @@ public class KinematicsFragment extends Fragment {
                 double accNum;
                 double timeNum;
                 double deltaNum;
-                boolean b = true;
 
                 String vfColor = "<font color='#000000'>Final Velocity = </font>";
                 String viColor = "<font color='#000000'>Initial Velocity = </font>";
@@ -70,7 +69,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(vfColor + numberFormat.format(finalVNum) + "<br>" + deltaDColor + numberFormat.format(deltaNum)));
                     return;
                 }
-                //d=??, a=??
                 //find deltaDistance and final velocity
                 if (deltaNumCheck.isEmpty() && accNumCheck.equals("") && !timeNumCheck.isEmpty() && !initialVCheck.isEmpty() && !finalVNumCheck.isEmpty()) {
                     finalVNum = Double.parseDouble(finalVNumCheck);
@@ -83,7 +81,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(deltaDColor + numberFormat.format(deltaNum) + "<br>" + accColor + numberFormat.format(accNum)));
                     return;
                 }
-                //d=??, vi=??
                 //find deltaDistance and initial velocity
                 if (deltaNumCheck.isEmpty() && initialVCheck.equals("") && !timeNumCheck.isEmpty() && !finalVNumCheck.isEmpty() && !accNumCheck.isEmpty()) {
                     finalVNum = Double.parseDouble(finalVNumCheck);
@@ -96,7 +93,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(deltaDColor + numberFormat.format(deltaNum) + "<br>" + viColor + numberFormat.format(initialVNum)));
                     return;
                 }
-                //vf=??, a=??
                 //find final velocity and acceleration
                 if (finalVNumCheck.equals("") && accNumCheck.equals("") && !timeNumCheck.isEmpty() && !initialVCheck.isEmpty() && !deltaNumCheck.isEmpty()) {
                     initialVNum = Double.parseDouble(initialVCheck);
@@ -109,7 +105,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(vfColor + numberFormat.format(finalVNum) + "<br>" + accColor + numberFormat.format(accNum)));
                     return;
                 }
-                //vf=??, t=??
                 //find final velocity and time
                 if (finalVNumCheck.equals("") && timeNumCheck.equals("") && !deltaNumCheck.isEmpty() && !initialVCheck.isEmpty() && !accNumCheck.isEmpty()) {
 
@@ -125,7 +120,6 @@ public class KinematicsFragment extends Fragment {
                     // resultTextView.setText("final v = " + numberFormat.format(finalVNum) + "\ntime = " + numberFormat.format(Math.abs(timeNum)));
                     return;
                 }
-                //d=??
                 //find deltaDistance
                 if (deltaNumCheck.isEmpty() && !timeNumCheck.isEmpty() && !initialVCheck.isEmpty() && !accNumCheck.isEmpty() && !finalVNumCheck.isEmpty()) {
                     initialVNum = Double.parseDouble(initialVCheck);
@@ -136,7 +130,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(deltaDColor + numberFormat.format(deltaNum)));
                     return;
                 }
-                //t=??, d=??
                 //find deltaDistance and time
                 if (deltaNumCheck.isEmpty() && timeNumCheck.equals("") && !finalVNumCheck.isEmpty() && !initialVCheck.isEmpty() && !accNumCheck.isEmpty()) {
                     finalVNum = Double.parseDouble(finalVNumCheck);
@@ -149,7 +142,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(timeColor + numberFormat.format(Math.abs(timeNum)) + "<br>" + deltaDColor + numberFormat.format(deltaNum)));
                     return;
                 }
-                //vi=??, t=??
                 //find initial velocity and time
                 if (initialVCheck.equals("") && timeNumCheck.equals("") && !finalVNumCheck.isEmpty() && !deltaNumCheck.isEmpty() && !accNumCheck.isEmpty()) {
                     finalVNum = Double.parseDouble(finalVNumCheck);
@@ -162,7 +154,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(viColor + numberFormat.format(initialVNum) + "<br>" + timeColor + numberFormat.format(Math.abs(timeNum))));
                     return;
                 }
-                //a=??, t=??
                 //find acceleration and time
                 if (accNumCheck.equals("") && timeNumCheck.equals("") && !deltaNumCheck.isEmpty() && !initialVCheck.isEmpty() && !finalVNumCheck.isEmpty()) {
                     finalVNum = Double.parseDouble(finalVNumCheck);
@@ -175,8 +166,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(accColor + numberFormat.format(accNum) + "<br>" + timeColor + numberFormat.format(Math.abs(timeNum))));
                     return;
                 }
-
-                //a=??
                 //find acceleration
                 if (accNumCheck.isEmpty() && !timeNumCheck.isEmpty() && !initialVCheck.isEmpty() && !deltaNumCheck.isEmpty() && !finalVNumCheck.isEmpty()) {
                     finalVNum = Double.parseDouble(finalVNumCheck);
@@ -187,7 +176,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(accColor + numberFormat.format(accNum)));
                     return;
                 }
-                //t=??
                 //find time
                 if (timeNumCheck.isEmpty() && !deltaNumCheck.isEmpty() && !initialVCheck.isEmpty() && !accNumCheck.isEmpty() && !finalVNumCheck.isEmpty()) {
                     finalVNum = Double.parseDouble(finalVNumCheck);
@@ -197,7 +185,6 @@ public class KinematicsFragment extends Fragment {
                     resultTextView.setText(Html.fromHtml(timeColor + numberFormat.format(Math.abs(timeNum))));
                     return;
                 }
-                //Vi=??
                 //find initial velocity
                 if (initialVCheck.isEmpty() && !timeNumCheck.isEmpty() && !deltaNumCheck.isEmpty() && !accNumCheck.isEmpty() && !finalVNumCheck.isEmpty()) {
                     //given values are put into decimal form
