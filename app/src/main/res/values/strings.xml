@@ -5,13 +5,33 @@
     <string name="nav_toolbox">Kinematics</string>
     <string name="nav_dictionary">Dictionary</string>
     <string name="large_actual_text">
-         "ACCELERATION\n"
+        <font fgcolor='#3F51B5' size="17">Acceleration</font>
+         "\n"
         "the rate of change in velocity with respect to time.\n"
-        "DISPLACEMENT\n"
-        " distance from the objects original position.\n"
-        "DISTANCE\n"
+        <font fgcolor='#3F51B5' size="17">Displacement</font>
+        "\n"
+        "distance from the objects original position.\n"
+        <font fgcolor='#3F51B5' size="17">Distance</font>
+        "\n"
         "Change in position from the last location.\n"
-        "\n\n\n\n\n\n\nIcons made by https://www.flaticon.com/authors/smashicons. from https://www.flaticon.com/"
+        <font fgcolor='#3F51B5' size="17">Final Velocity</font>
+        "\n"
+        "the last velocity of a given object after a period of time.\n"
+        <font fgcolor='#3F51B5' size="17">Initial Velocity</font>
+        "\n"
+        "the velocity at beginning of your experiment.\n"
+        <font fgcolor='#3F51B5' size="17">Newtons First Law</font>
+        "\n"
+        "An object at rest stays at rest and an object in motion stays in motion\n"
+        <font fgcolor='#3F51B5' size="17">Newtons Second Law</font>
+        "\n"
+        "The acceleration of an object is dependent upon two variables - the net force acting upon the object and the mass of the object.\n"
+        <font fgcolor='#3F51B5' size="17">Newtons Third Law</font>
+        "\n"
+        "For every action, there is an equal and opposite reaction.\n"
+
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        "Icons made by https://www.flaticon.com/authors/smashicons. from https://www.flaticon.com/"
         "\nwww.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/\n\n"
         "Icons made by www.flaticon.com/authors/freepik"
         "www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/\n"
