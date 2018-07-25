@@ -5,21 +5,22 @@
     <string name="nav_toolbox">Kinematics</string>
     <string name="nav_dictionary">Dictionary</string>
     <string name="large_actual_text">
+
         <font fgcolor='#3F51B5' size="17">Acceleration</font>
          "\n"
-        "the rate of change in velocity with respect to time.\n"
+        "The rate of change in velocity with respect to time.\n"
         <font fgcolor='#3F51B5' size="17">Displacement</font>
         "\n"
-        "distance from the objects original position.\n"
+        "Distance from the objects original position.\n"
         <font fgcolor='#3F51B5' size="17">Distance</font>
         "\n"
         "Change in position from the last location.\n"
         <font fgcolor='#3F51B5' size="17">Final Velocity</font>
         "\n"
-        "the last velocity of a given object after a period of time.\n"
+        "The last velocity of a given object after a period of time.\n"
         <font fgcolor='#3F51B5' size="17">Initial Velocity</font>
         "\n"
-        "the velocity at beginning of your experiment.\n"
+        "The velocity at beginning of your experiment.\n"
         <font fgcolor='#3F51B5' size="17">Newtons First Law</font>
         "\n"
         "An object at rest stays at rest and an object in motion stays in motion\n"
@@ -29,6 +30,12 @@
         <font fgcolor='#3F51B5' size="17">Newtons Third Law</font>
         "\n"
         "For every action, there is an equal and opposite reaction.\n"
+        <font fgcolor='#3F51B5' size="17">Kinematic Formulas</font>
+        "\n"
+        "vf = vi + a*t\n"
+        "DeltaX = ((vf + vi)/2) * t\n"
+        "DeltaX = vi*t + (1/2)a*t^2\n"
+        "vf^2 = vi^2 + 2*a*DeltaX\n"
 
         "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
         "Icons made by https://www.flaticon.com/authors/smashicons. from https://www.flaticon.com/"
