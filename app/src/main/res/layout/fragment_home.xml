@@ -33,7 +33,6 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="400dp" />
 
-
     <ImageView
         android:id="@+id/toolBoxView"
         android:layout_width="71dp"

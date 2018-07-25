@@ -18,7 +18,6 @@ import java.text.DecimalFormat;
  * A simple {@link Fragment} subclass.
  */
 public class KinematicsFragment extends Fragment {
-
     public KinematicsFragment() {
         // Required empty public constructor
     }
@@ -51,7 +50,7 @@ public class KinematicsFragment extends Fragment {
                 double accNum;
                 double timeNum;
                 double deltaNum;
-
+                //Formatting for result view
                 String vfColor = "<font color='#000000'>Final Velocity = </font>";
                 String viColor = "<font color='#000000'>Initial Velocity = </font>";
                 String accColor = "<font color='#000000'>Acceleration = </font>";
@@ -107,7 +106,6 @@ public class KinematicsFragment extends Fragment {
                 }
                 //find final velocity and time
                 if (finalVNumCheck.equals("") && timeNumCheck.equals("") && !deltaNumCheck.isEmpty() && !initialVCheck.isEmpty() && !accNumCheck.isEmpty()) {
-
                     initialVNum = Double.parseDouble(initialVCheck);
                     accNum = Double.parseDouble(accNumCheck);
                     deltaNum = Double.parseDouble(deltaNumCheck);
@@ -116,7 +114,6 @@ public class KinematicsFragment extends Fragment {
                     //t=(vf-vi)/a
                     timeNum = (finalVNum - initialVNum) / accNum;
                     resultTextView.setText(Html.fromHtml(vfColor + numberFormat.format(finalVNum) + "<br>" + timeColor + numberFormat.format(Math.abs(timeNum))));
-
                     // resultTextView.setText("final v = " + numberFormat.format(finalVNum) + "\ntime = " + numberFormat.format(Math.abs(timeNum)));
                     return;
                 }
@@ -217,7 +214,6 @@ public class KinematicsFragment extends Fragment {
         explainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                     //Intent intent = new Intent(KinematicsFragment.this.getActivity(),explainActivity.class);
                     //KinematicsFragment.this.startActivity(intent);
                 TextView resultExplainTextView2 = (TextView) view.findViewById(R.id.resultExplainTextView2);

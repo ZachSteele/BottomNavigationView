@@ -18,7 +18,7 @@
                 android:id="@+id/titleWindow"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Physics 1 Key Terms"
+                android:text="@string/title_text"
                 android:textAlignment="center"
                 android:textSize="24sp" />
 

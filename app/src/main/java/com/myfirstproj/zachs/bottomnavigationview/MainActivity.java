@@ -10,9 +10,7 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 public class MainActivity extends AppCompatActivity {
-
     private BottomNavigationView mMainNav;
-
     private HomeFragment homeFragment;
     private CalculatorFragment calculatorFragment;
     private KinematicsFragment kinematicsFragment;
@@ -27,25 +25,25 @@ public class MainActivity extends AppCompatActivity {
         calculatorFragment = new CalculatorFragment();
         kinematicsFragment = new KinematicsFragment();
         setFragment(homeFragment);
-        //Bottom Navigation
+        //Bottom Navigation switcher
         mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.nav_home:
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
+                        mMainNav.setItemBackgroundResource(R.color.colorPrimary);
                         setFragment(homeFragment);
                         return true;
                     case R.id.nav_calculator:
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
+                        mMainNav.setItemBackgroundResource(R.color.colorPrimary);
                         setFragment(calculatorFragment);
                         return true;
                     case R.id.nav_kinematics:
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
+                        mMainNav.setItemBackgroundResource(R.color.colorPrimary);
                         setFragment(kinematicsFragment);
                         return true;
                     case R.id.nav_Dictionary:
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
+                        mMainNav.setItemBackgroundResource(R.color.colorPrimary);
                         Intent intent1 = new Intent(MainActivity.this, DictionaryScroll.class);
                         startActivity(intent1);
                         return true;

@@ -17,8 +17,6 @@ import java.text.DecimalFormat;
  * A simple {@link Fragment} subclass.
  */
 public class CalculatorFragment extends Fragment {
-
-
     public CalculatorFragment() {
         // Required empty public constructor
     }
@@ -38,7 +36,6 @@ public class CalculatorFragment extends Fragment {
         calculatef2m.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 TextView resultTextViewf2m = view.findViewById(R.id.resultF2M);
                 EditText edittextfeet = view.findViewById(R.id.editTextF2M);
                 String feetNumCheck = edittextfeet.getText().toString();
@@ -74,7 +71,6 @@ public class CalculatorFragment extends Fragment {
                 metersNum = metersNum * 3.28084;
                 //formats the number to 2 two decimal places, allows for color change
                 resultTextViewm2f.setText(Html.fromHtml(numberFormat.format(metersNum) + colorFeet));
-
             }
         });
         //when this button is clicked calculate meters to feet
